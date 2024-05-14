@@ -10,7 +10,7 @@ body {
 
 .container {
   max-width: 375px;
-  padding: 0 15px;
+  padding: 0 25px;
   margin: 0 auto;
 
   @media screen and (min-width: 744px) {
@@ -54,10 +54,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: transform 0.2s var(--hover-effect);
   }
 
   &:hover {
     /* background-image: var(--green-hover-gradien); */
     background-position: 100% 0;
+
+    & span {
+      transform: translate(5px, -5px);
+    }
   }
 }

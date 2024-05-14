@@ -3,3 +3,5 @@
 @import url('./config.css');
 
 @import url('./components/section-header.css');
+@import url('./components/section-hero.css');
+@import url('./components/section-reviews.css');
