@@ -1,0 +1,25 @@
+.header {
+  padding: 24px 0;
+  border-bottom: 0.5px solid var(--green-200);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.header-nav-link {
+  transition: opacity 0.2s var(--hover-effect);
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

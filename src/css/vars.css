@@ -1,0 +1,15 @@
+:root {
+  --main-font: 'DM Sans', sans-serif;
+  --secondary-font: 'Be Vietnam Pro', sans-serif;
+  --title-font: 'Inter', sans-serif;
+
+  --light-color: #e7e7e7;
+  --black-color: #080808;
+  --dark-color: #0d0d0d;
+  --grey-color: #737373;
+  --green-200: #048c80;
+  --green-gradient-color: linear-gradient(212deg, #aad9d1 0%, #017373 100%);
+  --green-hover-gradien: linear-gradient(112deg, #aad9d1 0%, #017373 100%);
+
+  --hover-effect: cubic-bezier(0.4, 0, 0.2, 1);
+}
