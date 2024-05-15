@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/smartnotes/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/smartnotes/assets/index-793609ba.css">
+    <link rel="stylesheet" href="/smartnotes/assets/index-306344fb.css">
   </head>
   <body>
     <header class="header">
@@ -35,13 +35,13 @@
     <nav class="header-nav">
       <ul class="header-nav-list">
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Features</a>
+          <a href="#features" class="header-nav-link">Features</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Pricing</a>
+          <a href="#pricing" class="header-nav-link">Pricing</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Support</a>
+          <a href="#support" class="header-nav-link">Support</a>
         </li>
       </ul>
     </nav>
@@ -75,7 +75,12 @@
         today.
       </p>
       <form class="hero-form">
-        <input type="email" class="hero-form-input" placeholder="Your email" />
+        <input
+          type="email"
+          class="hero-form-input"
+          placeholder="Your email"
+          required
+        />
         <button class="button hero-form-btn">
           Sign up
           <span>
@@ -116,7 +121,7 @@
   </div>
 </section>
 
-      <section class="benefits">
+      <section class="benefits" id="features">
   <div class="container benefits-container">
     <h2 class="benefits-title">
       Discover the Power of <span>SmartNotes</span>
@@ -224,7 +229,7 @@
   </div>
 </section>
 
-      <section class="plans">
+      <section class="plans" id="pricing">
   <div class="container plans-container">
     <h2 class="plans-title">Pricing & Plans</h2>
     <p class="plans-descr">
@@ -412,7 +417,7 @@
   </div>
 </section>
 
-      <section class="questions">
+      <section class="questions" id="support">
   <div class="container questions-container">
     <h2 class="questions-title">Frequently Asked Questions</h2>
     <p class="questions-descr">
@@ -550,6 +555,29 @@
 </section>
 
     </main>
+
+    <div class="header-mobile">
+  <button class="header-mobile-close">&#x2715;</button>
+  <ul class="header-mobile-list">
+    <li class="header-mobile-item">
+      <a href="#features" class="header-mobile-link">Features</a>
+    </li>
+    <li class="header-mobile-item">
+      <a href="#pricing" class="header-mobile-link">Pricing</a>
+    </li>
+    <li class="header-mobile-item">
+      <a href="#support" class="header-mobile-link">Support</a>
+    </li>
+  </ul>
+  <button class="button header-mobile-btn">
+    Get Started
+    <span>
+      <svg class="icon-arrow">
+        <use href="/smartnotes/assets/icons-8d8448a6.svg#icon-arrow"></use>
+      </svg>
+    </span>
+  </button>
+</div>
 
     
   </body>
