@@ -1,0 +1,131 @@
+.questions {
+  padding-top: 130px;
+}
+
+.questions-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 744px) {
+    font-size: 38px;
+  }
+
+  @media screen and (min-width: 1150px) {
+    font-size: 48px;
+  }
+}
+
+.questions-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--grey-color);
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 72px;
+}
+
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.questions-item {
+  max-width: 800px;
+  border: 1px solid var(--green-200);
+  border-radius: 8px;
+  padding: 16px 30px;
+  cursor: pointer;
+
+  transition: background-color 0.4s var(--hover-effect);
+
+  &:hover {
+    background-color: var(--light-color);
+
+    & p {
+      color: var(--dark-color);
+    }
+
+    & .questions-item-label {
+      & svg {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+.questions-item-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+
+  transition: color 0.2s var(--hover-effect);
+
+  & span {
+    width: 32px;
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid var(--green-200);
+
+    & svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--green-200);
+      transition: transform 0.4s var(--hover-effect);
+    }
+  }
+
+  @media screen and (min-width: 744px) {
+    font-size: 18px;
+  }
+}
+
+.questions-item-content {
+  max-height: 0px;
+  height: auto;
+  overflow-x: auto;
+  padding-right: 40px;
+  color: var(--grey-color);
+
+  transition: margin-top 0.4s var(--hover-effect),
+    max-height 0.4s var(--hover-effect), color 0.4s var(--hover-effect);
+}
+
+.questions-item.active {
+  background-color: var(--light-color);
+
+  & .questions-item-label {
+    color: var(--dark-color);
+
+    & svg {
+      transform: rotate(45deg);
+    }
+  }
+
+  & .questions-item-content {
+    max-height: 500px;
+    margin-top: 20px;
+  }
+
+  &:hover {
+    & .questions-item-label {
+      & svg {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
