@@ -1,0 +1,42 @@
+.video {
+  padding-top: 130px;
+}
+
+.video-container {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-background {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.video-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 114px;
+  height: 114px;
+  background-color: var(--light-color);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: opacity 0.2s var(--hover-effect);
+
+  & svg {
+    fill: var(--green-200);
+    width: 20px;
+    height: 22px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
