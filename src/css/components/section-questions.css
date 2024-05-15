@@ -49,11 +49,8 @@
   &:hover {
     background-color: var(--light-color);
 
-    & p {
-      color: var(--dark-color);
-    }
-
     & .questions-item-label {
+      color: var(--dark-color);
       & svg {
         transform: rotate(45deg);
       }
@@ -101,8 +98,12 @@
   padding-right: 40px;
   color: var(--grey-color);
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   transition: margin-top 0.4s var(--hover-effect),
-    max-height 0.4s var(--hover-effect), color 0.4s var(--hover-effect);
+    max-height 0.4s var(--hover-effect);
 }
 
 .questions-item.active {
@@ -119,13 +120,5 @@
   & .questions-item-content {
     max-height: 500px;
     margin-top: 20px;
-  }
-
-  &:hover {
-    & .questions-item-label {
-      & svg {
-        transform: rotate(0deg);
-      }
-    }
   }
 }

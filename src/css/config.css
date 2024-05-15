@@ -59,7 +59,6 @@ body {
   }
 
   &:hover {
-    /* background-image: var(--green-hover-gradien); */
     background-position: 100% 0;
 
     & span {
