@@ -51,9 +51,6 @@
 
     & .questions-item-label {
       color: var(--dark-color);
-      & svg {
-        transform: rotate(45deg);
-      }
     }
   }
 }
