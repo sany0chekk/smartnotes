@@ -1,3 +1,5 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
 @import url('./vars.css');
 @import url('./reset.css');
 @import url('./config.css');
@@ -13,3 +15,4 @@
 @import url('./components/section-footer.css');
 
 @import url('./components/modal-header-mobile.css');
+@import url('./components/modal-registration.css');
