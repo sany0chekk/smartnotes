@@ -8,6 +8,10 @@ body {
   color: var(--light-color);
 }
 
+.sr {
+  visibility: hidden;
+}
+
 .container {
   max-width: 375px;
   padding: 0 25px;
@@ -39,7 +43,7 @@ body {
   gap: 8px;
 
   background-image: var(--green-gradient-color);
-  transition: background-position 0.3s var(--hover-effect);
+  /* transition: background-position 0.3s var(--hover-effect); */
   background-size: 140% 140%;
 
   border-radius: 5px;
