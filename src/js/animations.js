@@ -1,43 +1,53 @@
 import ScrollReveal from 'scrollreveal';
 
-elementAnimation('left', '.header-logo');
-listAnimation('top', '50px', '.header-nav-item');
-elementAnimation('right', '.header-btn');
-elementAnimation('right', '.header-mobile-open');
+window.addEventListener('load', () => {
+  ScrollReveal().reveal('.header');
+  ScrollReveal().reveal('.hero');
+  ScrollReveal().reveal('.reviews');
+  ScrollReveal().reveal('.benefits');
+  ScrollReveal().reveal('.plans');
+  ScrollReveal().reveal('.sign');
+  ScrollReveal().reveal('.footer');
 
-elementAnimation('left', '.hero-title');
-elementAnimation('right', '.hero-img');
-elementAnimation('bottom', '.hero-descr');
-elementAnimation('bottom', '.hero-form');
+  elementAnimation('left', '.header-logo');
+  listAnimation('top', '50px', '.header-nav-item');
+  elementAnimation('right', '.header-btn');
+  elementAnimation('right', '.header-mobile-open');
 
-elementAnimation('right', '.reviews-list');
+  elementAnimation('left', '.hero-title');
+  elementAnimation('right', '.hero-img');
+  elementAnimation('bottom', '.hero-descr');
+  elementAnimation('bottom', '.hero-form');
 
-elementAnimation('left', '.benefits-title');
-elementAnimation('right', '.benefits-descr');
-listAnimation('bottom', '100px', '.benefits-item');
+  elementAnimation('right', '.reviews-list');
 
-elementAnimation('bottom', '.video-container');
+  elementAnimation('left', '.benefits-title');
+  elementAnimation('right', '.benefits-descr');
+  listAnimation('bottom', '100px', '.benefits-item');
 
-elementAnimation('top', '.plans-title');
-elementAnimation('top', '.plans-descr');
+  elementAnimation('bottom', '.video-container');
 
-elementAnimation('right', '.plans-version');
+  elementAnimation('top', '.plans-title');
+  elementAnimation('top', '.plans-descr');
 
-listAnimation('bottom', '100px', '.plans-item');
+  elementAnimation('right', '.plans-version');
 
-elementAnimation('left', '.questions-title');
-elementAnimation('right', '.questions-descr');
-listAnimation('bottom', '100px', '.questions-item');
+  listAnimation('bottom', '100px', '.plans-item');
 
-elementAnimation('left', '.sign-content');
-elementAnimation('right', '.sign-img');
+  elementAnimation('left', '.questions-title');
+  elementAnimation('right', '.questions-descr');
+  listAnimation('bottom', '100px', '.questions-item');
 
-elementAnimation('left', '.footer-content');
+  elementAnimation('left', '.sign-content');
+  elementAnimation('right', '.sign-img');
 
-elementAnimation('top', '.footer-item-title');
-listAnimation('bottom', '100px', '.footer-item-el');
+  elementAnimation('left', '.footer-content');
 
-elementAnimation('left', '.footer-bottom');
+  elementAnimation('top', '.footer-item-title');
+  listAnimation('bottom', '100px', '.footer-item-el');
+
+  elementAnimation('left', '.footer-bottom');
+});
 
 function elementAnimation(position, element) {
   ScrollReveal().reveal(element, {
