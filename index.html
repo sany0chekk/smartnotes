@@ -20,11 +20,13 @@
     />
     
     <script type="module" crossorigin src="/smartnotes/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/smartnotes/assets/vendor-a4a06e55.js">
-    <link rel="stylesheet" href="/smartnotes/assets/index-319d496c.css">
+    <link rel="modulepreload" crossorigin href="/smartnotes/assets/vendor-456d1972.js">
+    <link rel="stylesheet" href="/smartnotes/assets/vendor-b51df72b.css">
+    <link rel="stylesheet" href="/smartnotes/assets/index-aa876869.css">
   </head>
   <body>
-    <header class="header">
+    <div class="wrapper">
+      <header class="header">
   <div class="container header-container">
     <a href="#" class="header-logo">
       <img
@@ -63,8 +65,8 @@
 </header>
 
 
-    <main>
-      <section class="hero">
+      <main>
+        <section class="hero">
   <div class="container hero-container">
     <div class="hero-content">
       <h1 class="hero-title">
@@ -102,27 +104,77 @@
   </div>
 </section>
 
-      <section class="reviews">
+        <section class="reviews">
   <div class="container reviews-container">
-    <ul class="reviews-list">
-      <li class="reviews-item">
-        <p class="reviews-text">
-          The real-time synchronization and AI-powered organization have made
-          our workflow more efficient than ever.
-        </p>
-        <div class="reviews-author">
-          <p class="reviews-author-name">Sarah Johnson</p>
-          <p class="reviews-author-position">TechSavvy Solutions</p>
-        </div>
-        <svg width="37" height="24">
-          <use href="/smartnotes/assets/icons-8d8448a6.svg#icon-quote"></use>
-        </svg>
-      </li>
-    </ul>
+    <div class="reviews-swiper-container swiper">
+      <ul class="reviews-list swiper-wrapper">
+        <li class="reviews-item swiper-slide">
+          <div class="reviews-item-content">
+            <p class="reviews-text">
+              The real-time synchronization and AI-powered organization have
+              made our workflow more efficient than ever.
+            </p>
+            <div class="reviews-author">
+              <p class="reviews-author-name">Sarah Johnson</p>
+              <p class="reviews-author-position">TechSavvy Solutions</p>
+            </div>
+            <svg width="37" height="24">
+              <use href="/smartnotes/assets/icons-8d8448a6.svg#icon-quote"></use>
+            </svg>
+          </div>
+        </li>
+        <li class="reviews-item swiper-slide">
+          <div class="reviews-item-content">
+            <p class="reviews-text">
+              The intuitive interface and seamless integration with our existing
+              tools have revolutionized our productivity. Highly recommend!
+            </p>
+            <div class="reviews-author">
+              <p class="reviews-author-name">Alex Smith</p>
+              <p class="reviews-author-position">TechCrunch Innovations</p>
+            </div>
+            <svg width="37" height="24">
+              <use href="/smartnotes/assets/icons-8d8448a6.svg#icon-quote"></use>
+            </svg>
+          </div>
+        </li>
+        <li class="reviews-item swiper-slide">
+          <div class="reviews-item-content">
+            <p class="reviews-text">
+              The AI-assisted automation has not only saved us time but also
+              helped in minimizing errors. A game-changer for our business!
+            </p>
+            <div class="reviews-author">
+              <p class="reviews-author-name">Emma Davis</p>
+              <p class="reviews-author-position">DataDriven Enterprises</p>
+            </div>
+            <svg width="37" height="24">
+              <use href="/smartnotes/assets/icons-8d8448a6.svg#icon-quote"></use>
+            </svg>
+          </div>
+        </li>
+        <li class="reviews-item swiper-slide">
+          <div class="reviews-item-content">
+            <p class="reviews-text">
+              The real-time collaboration and synchronization features have made
+              teamwork smoother and more enjoyable. A must-have for any modern
+              workplace!
+            </p>
+            <div class="reviews-author">
+              <p class="reviews-author-name">Mike Brown</p>
+              <p class="reviews-author-position">AgileTech Solutions</p>
+            </div>
+            <svg width="37" height="24">
+              <use href="/smartnotes/assets/icons-8d8448a6.svg#icon-quote"></use>
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 
-      <section class="benefits" id="features">
+        <section class="benefits" id="features">
   <div class="container benefits-container">
     <h2 class="benefits-title">
       Discover the Power of <span>SmartNotes</span>
@@ -212,7 +264,7 @@
   </div>
 </section>
 
-      <section class="video">
+        <section class="video">
   <div class="container video-container">
     <img
       srcset="/smartnotes/assets/video-73865077.jpg 1x, /smartnotes/assets/video-2x-375ced52.jpg 2x"
@@ -223,14 +275,14 @@
     <button class="video-play-btn">
       <span>
         <svg>
-          <use href="../img/icons.svg#icon-play"></use>
+          <use href="/smartnotes/assets/icons-8d8448a6.svg#icon-play"></use>
         </svg>
       </span>
     </button>
   </div>
 </section>
 
-      <section class="plans" id="pricing">
+        <section class="plans" id="pricing">
   <div class="container plans-container">
     <h2 class="plans-title">Pricing & Plans</h2>
     <p class="plans-descr">
@@ -369,7 +421,7 @@
           Enterprise Plan
         </p>
         <p class="plans-item-price">
-          Custom
+          $29.99
           <span>/ month</span>
         </p>
         <div class="plans-item-descr">
@@ -418,7 +470,7 @@
   </div>
 </section>
 
-      <section class="questions" id="support">
+        <section class="questions" id="support">
   <div class="container questions-container">
     <h2 class="questions-title">Frequently Asked Questions</h2>
     <p class="questions-descr">
@@ -527,7 +579,7 @@
   </div>
 </section>
 
-      <section class="sign">
+        <section class="sign">
   <div class="container sign-container">
     <div class="sign-content">
       <h2 class="sign-title">Unlock the Full Potential of SmartNotes</h2>
@@ -555,9 +607,9 @@
   </div>
 </section>
 
-    </main>
+      </main>
 
-    <footer class="footer">
+      <footer class="footer">
   <div class="container footer-container">
     <div class="footer-top">
       <div class="footer-content">
@@ -687,7 +739,7 @@
 </footer>
 
 
-    <div class="header-mobile">
+      <div class="header-mobile">
   <button class="header-mobile-close">&#x2715;</button>
   <ul class="header-mobile-list">
     <li class="header-mobile-item">
@@ -710,6 +762,7 @@
   </button>
 </div>
 
+    </div>
     
   </body>
 </html>
