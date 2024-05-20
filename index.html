@@ -20,9 +20,9 @@
     />
     
     <script type="module" crossorigin src="/smartnotes/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/smartnotes/assets/vendor-456d1972.js">
-    <link rel="stylesheet" href="/smartnotes/assets/vendor-b51df72b.css">
-    <link rel="stylesheet" href="/smartnotes/assets/index-86e2788a.css">
+    <link rel="modulepreload" crossorigin href="/smartnotes/assets/vendor-42c9c406.js">
+    <link rel="stylesheet" href="/smartnotes/assets/vendor-7a70aed2.css">
+    <link rel="stylesheet" href="/smartnotes/assets/index-5a13d2e5.css">
   </head>
   <body>
     <div class="wrapper">
@@ -752,7 +752,7 @@
       <a href="#support" class="header-mobile-link">Support</a>
     </li>
   </ul>
-  <button class="button header-mobile-btn">
+  <button class="button header-mobile-btn js-reg-open">
     Get Started
     <span>
       <svg class="icon-arrow">
@@ -776,6 +776,7 @@
             type="email"
             class="reg-form-input"
             placeholder="Enrer your email"
+            required
           />
         </div>
         <div class="reg-form-element">
@@ -784,6 +785,7 @@
             type="password"
             class="reg-form-input"
             placeholder="Password"
+            required
           />
         </div>
         <div class="reg-form-element">
@@ -792,6 +794,7 @@
             type="password"
             class="reg-form-input"
             placeholder="Repeat password"
+            required
           />
         </div>
         <button class="button reg-form-submit">
@@ -803,6 +806,21 @@
           </span>
         </button>
       </form>
+    </div>
+  </div>
+</div>
+
+<div class="backdrop reg-warning">
+  <div class="reg-warning-container">
+    <div class="reg-warning-dialog">
+      <button class="reg-warning-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <p class="reg-warning-text">
+        This website is currently in a testing phase, therefore, user
+        registration is temporarily disabled. We appreciate your understanding
+        and patience.
+      </p>
     </div>
   </div>
 </div>
