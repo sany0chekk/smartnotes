@@ -5,3 +5,4 @@ import './js/smooth-scroll';
 import './js/reviews-swiper';
 import './js/select-plan';
 import './js/modal-registration';
+import './js/video-actions';
