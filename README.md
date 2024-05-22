@@ -1,7 +1,5 @@
 # SmartNotes
 This website example showcases my skills and expertise as a Frontend Developer. SmartNotes features a modern design, user-friendly interface, and seamless performance across various platforms. This example demonstrates my ability to develop functional and practical web applications.
-## Developer
-- [sany0chekk](https://www.instagram.com/hackingbegin/)
 ## Libraries Used
 - [basiclightbox](https://basiclightbox.electerious.com): A lightweight and
 customizable lightbox plugin for displaying images, videos, and other content.
